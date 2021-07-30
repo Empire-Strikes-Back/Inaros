@@ -1,0 +1,5 @@
+[user]
+	email = surveyhub@program
+	name = surveyhub
+
+# git config --local include.path ../.gitconfig
