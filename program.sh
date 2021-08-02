@@ -17,4 +17,13 @@ main(){
     -M -m surveyhub.main
 }
 
+uberjar(){
+  clj \
+    -X:uberjar genie.core/process \
+    :uberjar-name out/surveyhub.standalone.jar \
+    :main-ns surveyhub.main
+  mkdir -p out/jpackage-input
+  mv out/surveyhub.standalone.jar out/jpackage-input/
+}
+
 "$@"
