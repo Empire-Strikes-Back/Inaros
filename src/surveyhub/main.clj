@@ -32,7 +32,7 @@
         (.setSize 1600 1200)
         (.setLocationByPlatform true)
         (.setVisible true))
-      (alter-var-root #'surveyhub.main/jframe (constantly jframe)))
+      (alter-var-root #'surveyhub/jframe (constantly jframe)))
 
     (go)))
 
